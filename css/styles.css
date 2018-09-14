@@ -86,6 +86,10 @@ body {
   border: 1px solid #555;
 }
 
+.btn-group {
+	position: unset;
+}
+
 #contact {
   background-color: #FFD100;
   color: #0000B2;
@@ -147,6 +151,7 @@ body {
   color: white;
 }
 
+/*Media Query*/
 @media (max-width: 813px) {
   #navbar li a {
     padding: 14px 7px;
@@ -191,6 +196,9 @@ body {
     align-items: flex-start;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  .btn-group {
+    position: unset;
   }
 
   #contact {
