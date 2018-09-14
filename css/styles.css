@@ -3,7 +3,7 @@ body {
 }
 
 #navbar {
-  background-color: #f2f2f2;
+  background-color: #0000B2;
   position: fixed;
   width: 100%;
   text-align: right;
@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f2f2f2;
+    background-color: #0000B2;
 }
 
 #navbar li {
@@ -27,25 +27,25 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #FFD100;
 }
 
 #navbar li a:hover {
-    background-color: #111;
-    color: white;
+    background-color: #FFD100;
+    color:#0000B2;
 }
 
 #welcome-section {
   top: 0;
   padding-top: 45vh;
-  background-color: #f2f2f2;
+  background-color: #0000B2;
   text-align: center;
-  min-height: 55vh;
+  min-height: 100vh;
   margin: auto;
 }
 
-#welcome-section img {
-  border-radius: 50%;
-  margin-bottom: 20px;
+#welcome-section h1, .info  {
+  color:#FFD100;
 }
 
 #welcome-section .info {
@@ -53,10 +53,9 @@ body {
   margin: auto;
 }
 
-#projects {
+#project-grid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -66,8 +65,20 @@ body {
   padding-bottom: 20px;
 }
 
-.card{
+.project-section {
+  color: #1A1AFF;
+}
+.card-title {
+  color:#0000FF;
+}
+
+.card {
   position: unset;
+  margin: 18px 0;
+}
+
+.card-body a {
+  color: #B29200;
 }
 
 .project-tile img {
@@ -76,7 +87,8 @@ body {
 }
 
 #contact {
-  background-color: #555;
+  background-color: #FFD100;
+  color: #0000B2;
 }
 
 .project-section,
@@ -93,15 +105,27 @@ body {
 #profile-link button {
   border-radius: 5%;
   padding: 5px;
+  margin: 18px;
+  color: #B29200;
+}
+
+#profile-link button:hover {
+  color:white;
+  background-color: #B29200;
 }
 
 #contact {
+	height: 100vh;
+  padding-top: 50px;
   text-align: center;
-  padding-bottom: 50vh;
 }
 
 #contact h1 {
   padding-bottom: 20px;
+}
+
+#contact-info {
+	padding-top: 25vh;
 }
 
 #contact a {
@@ -109,6 +133,7 @@ body {
   width: 100px;
   margin: 0 35px 45px 35px;
   height: 100px;
+  color: #0000B2;
   background-color: white;
   line-height: 100px;
   border-radius: 50%;
@@ -118,7 +143,7 @@ body {
 }
 
 #contact a:hover {
-  background-color: #007bff;
+  background-color: #0000B2;;
   color: white;
 }
 
@@ -146,7 +171,7 @@ body {
     margin: 18px 0;
   }
 
-  #projects {
+  #project-grid {
     grid-template-columns: auto;
   }
 
@@ -172,6 +197,10 @@ body {
     width: 75px;
     height: 75px;
     line-height: 75px;
+  }
+
+  #contact-info {
+    padding-top: 0;
   }
 }
 
