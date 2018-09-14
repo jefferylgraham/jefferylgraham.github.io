@@ -1,7 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
+body {
+  font-family: 'Cinzel Decorative', cursive;
 }
+
 #navbar {
   background-color: #f2f2f2;
   position: fixed;
@@ -66,6 +66,10 @@
   padding-bottom: 20px;
 }
 
+.card{
+  position: unset;
+}
+
 .project-tile img {
   width: 280px;
   border: 1px solid #555;
@@ -82,7 +86,7 @@
 
 
 #profile-link {
-  width: 100px;
+  /* width: 100px; */
   margin: auto;
 }
 
@@ -93,8 +97,7 @@
 
 #contact {
   text-align: center;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 50vh;
 }
 
 #contact h1 {
@@ -111,16 +114,65 @@
   border-radius: 50%;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 10px 5px 5px black;
 }
 
-@media (max-width: 769px) {
+#contact a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 813px) {
+  #navbar li a {
+    padding: 14px 7px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section {
+    padding-top: 35vh;
+    min-height: 100vh;
+  }
+
+  #welcome-section .info {
+    width: auto;
+  }
+
+  .card.mx-auto.project-tile {
+    width: 78vw;
+    margin: 18px 0;
+  }
+
   #projects {
     grid-template-columns: auto;
-    width: 95vw;
   }
 
 
   .project-section, #profile-link {
     grid-column: 1 / 2;
   }
+
+  .project-tile {
+    padding: 15px 0;
+  }
+
+  #contact {
+    height: 100vh;
+    padding: 15px;
+  }
+
+  #contact h2 {
+    padding: 50px;
+  }
+
+  #contact a {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
 }
+
+
