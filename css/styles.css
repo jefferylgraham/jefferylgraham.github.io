@@ -184,6 +184,15 @@ body {
     padding: 15px 0;
   }
 
+  .btn-group {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   #contact {
     height: 100vh;
     padding: 15px;
