@@ -1,13 +1,14 @@
 body {
   font-family: 'Cinzel Decorative', cursive;
+  
 }
 
 #navbar {
-  background-color: #0000B2;
   position: fixed;
   width: 100%;
   text-align: right;
   display: block;
+  z-index: 500;
 }
 
 #navbar ul {
@@ -15,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0000B2;
+    background: linear-gradient(90deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 100%);
 }
 
 #navbar li {
@@ -38,7 +39,8 @@ body {
 #welcome-section {
   top: 0;
   padding-top: 45vh;
-  background-color: #0000B2;
+  background: rgb(0,0,70);
+background: linear-gradient(90deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 100%);
   text-align: center;
   min-height: 100vh;
   margin: auto;
@@ -55,7 +57,7 @@ body {
 
 #project-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -75,6 +77,7 @@ body {
 .card {
   position: unset;
   margin: 18px 0;
+  border: none;
 }
 
 .card-body a {
@@ -82,7 +85,7 @@ body {
 }
 
 .project-tile img {
-  width: 280px;
+  width: 50vw;
   border: 1px solid #555;
 }
 
@@ -150,6 +153,32 @@ body {
   background-color: #0000B2;;
   color: white;
 }
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FFD100; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FFD100; }
+} 
 
 /*Media Query*/
 @media (max-width: 813px) {
@@ -171,6 +200,12 @@ body {
     width: auto;
   }
 
+  /* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 95% }
+}
+
   .card.mx-auto.project-tile {
     width: 78vw;
     margin: 18px 0;
@@ -190,15 +225,15 @@ body {
   }
 
   .btn-group {
-    -ms-flex-direction: column;
+   
     flex-direction: column;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: center;
-    justify-content: center;
+   
+
   }
-  .btn-group {
-    position: unset;
+
+
+  .project-tile img {
+    width: 75vw;
   }
 
   #contact {

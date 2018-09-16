@@ -10,8 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Portfolio: Jeffery L. Graham</title>
+  <title>Jeffery L. Graham</title>
 </head>
 
 <body>
@@ -27,8 +28,10 @@
   <section id="welcome-section">
     <!-- <img src="https://media.licdn.com/dms/image/C4E03AQERFaBPGiDTYg/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=LX5MHt7tHo1bPyRtyujEwZnddQA-oqvXJVrTGTIE9Jg"
       alt="Picture of Jeffery L. Graham"/> -->
+
     <h1>Jeffery L. Graham</h1>
-    <div class="info">
+
+    <div class="typewriter info">
       <p>
         Hello everybody! I’m a web developer.
       </p>
@@ -38,20 +41,27 @@
 
   <section id="projects" class="text-center">
     <h2 class="project-section">Check out some of my work:</h2>
+    <h3>Responsive Web Design Projects</h3>
     <div id="project-grid">
       <div class="card mx-auto project-tile">
-        <img class="card-img-top mx-auto img-fluid" src="images/bob-marley-tribute-page-screenshot.png" alt="Screenshot of Bob Marley Tribute Page">
-        <div class="card-body">
-          <h5 class="card-title">Tribute Page</h5>
-        </div>
-        <div class="card-body">
-          <a href="https://jefferylgraham.github.io/tribute-page/" target="_blank" class="card-link">View Project</a>
-          <a href="https://github.com/jefferylgraham/tribute-page" target="_blank" class="card-link">View Code</a>
+        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/bob-marley-tribute-page-screenshot.png"
+          alt="Screenshot of Bob Marley Tribute Page">
+        <div data-aos="zoom-in" class="card-body">
+          <h4 class="card-title">Tribute Page</h4>
+          <p>A tribute page for Bob Marley</p>
+          <div class="btn-group">
+            <a data-aos="fade-right" id="profile-link" href="https://jefferylgraham.github.io/tribute-page/" target="_blank">
+              <button class="btn-outline-primary">View Project</button>
+            </a>
+            <a data-aos="fade-left" id="profile-link" href="https://github.com/jefferylgraham/tribute-page" target="_blank">
+              <button class="btn-outline-primary">View Code</button>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="card mx-auto project-tile">
-        <img class="card-img-top mx-auto img-fluid" src="https://i.imgur.com/hh3yMD1.png" alt="Card image cap">
+        <img data-aos="zoom-in" class="card-img-top mx-auto img-fluid" src="https://i.imgur.com/hh3yMD1.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Landing Page</h5>
         </div>
@@ -62,7 +72,7 @@
       </div>
 
       <div class="card mx-auto project-tile">
-        <img class="card-img-top mx-auto img-responsive" src="https://i.imgur.com/hh3yMD1.png" alt="Card image cap">
+        <img data-aos="zoom-in" class="card-img-top mx-auto img-fluid" src="https://i.imgur.com/hh3yMD1.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Technical<br>Documentation</h5>
         </div>
@@ -91,14 +101,19 @@
 
   <section id="contact">
     <h2>Let's Collaborate!</h2>
-    <div id="contact-info">
+    <div data-aos="fade-zoom-in" data-aos-duration="3000" id="contact-info">
       <a href="https://www.linkedin.com/in/jefferylgraham/" target="_blank"><i class="fab fa-linkedin-in"></i> </a>
 
-      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> </a>
+      <a href="https://twitter.com/JeffERyLGraham" target="_blank"><i class="fab fa-twitter"></i> </a>
 
       <a href="https://jefferylgraham.com/contact/" target="_blank"><i class="fas fa-envelope"></i> </a>
     </div>
   </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
