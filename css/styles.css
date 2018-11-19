@@ -1,6 +1,18 @@
 body {
-  font-family: 'Cinzel Decorative', cursive;
-  
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+	font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+
+}
+
+.h1, h1 {
+	font-size: 5rem;
+}
+
+.h2, h2 {
+	font-size: 3.5rem;
 }
 
 #navbar {
@@ -38,12 +50,13 @@ body {
 
 #welcome-section {
   top: 0;
-  padding-top: 45vh;
+  padding-top: 40vh;
   background: rgb(0,0,70);
 background: linear-gradient(90deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 100%);
   text-align: center;
   min-height: 100vh;
   margin: auto;
+  width: 100%;
 }
 
 #welcome-section h1, .info  {

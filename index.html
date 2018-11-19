@@ -7,194 +7,255 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel=" stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Jeffery L. Graham</title>
+  <title>Jeff Graham | I Build Cool Stuff!</title>
 </head>
 
 <body>
 
-  <nav id="navbar">
-    <ul>
-      <li><a href="#welcome-section">About</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="welcome-section">
-    <!-- <img src="https://media.licdn.com/dms/image/C4E03AQERFaBPGiDTYg/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=LX5MHt7tHo1bPyRtyujEwZnddQA-oqvXJVrTGTIE9Jg"
-      alt="Picture of Jeffery L. Graham"/> -->
-
-    <h1>Jeffery L. Graham</h1>
-
-    <div class="typewriter info">
-      <p>
-        Hello everybody! I’m a web developer.
-      </p>
-    </div>
-
-  </section>
-
-  <section id="projects" class="text-center">
-    <h2 class="project-section">Check out some of my work:</h2>
-    <!-- APIs & Microservices Projects -->
-    <div id="project-grid">
-      <h3>APIs & Microservices Projects</h3>
-      <!-- Exercise Tracker Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/exercise-tracker-screenshot.png"
-          alt="Screenshot of random quote generator">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">Exercise Tracker</h4>
-          <p>Exercise Tracker utilizing node.js, mongoose & MongoDb</p>
-          <div data-aos="fade-right">
-            <a id="profile-link" href="https://jefferylgraham-exercise-tracker.glitch.me/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
-          </div>
-        </div>
+  <div class="container-fluid">
+      <div class="row">
+        <nav id="navbar">
+            <ul>
+              <li><a href="#welcome-section">About</a></li>
+              <li><a href="#projects">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
       </div>
-    <!-- D3 Projects -->
-    <div id="project-grid">
-      <h3>D3.js Data Visualization Projects</h3>
-      <!-- D3 Treemap Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/d3-treemap-screenshot.png"
-          alt="Screenshot of random quote generator">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">Treemap Diagram</h4>
-          <p>Treemap Diagram using D3</p>
-          <div data-aos="fade-left">
-            <a id="profile-link" href="https://jefferylgraham.github.io/d3-treemap/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
-          </div>
-        </div>
+    
+      <div class="row">
+        <section id="welcome-section">
+            <!-- <img src="https://media.licdn.com/dms/image/C4E03AQERFaBPGiDTYg/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=LX5MHt7tHo1bPyRtyujEwZnddQA-oqvXJVrTGTIE9Jg"
+              alt="Picture of Jeffery L. Graham"/> -->
+        
+            <h1>Jeff Graham</h1>
+        
+            <div class="typewriter info">
+              <p>
+                Hello everybody! I’m a web developer.
+              </p>
+            </div>
+        
+          </section>
       </div>
-    <!-- ReactJS Projects -->
-    <div id="project-grid">
-      <h3>Front-End Library Projects</h3>
-      <!-- Random Quote Machine Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/random-quote-generator-screenshot.png"
-          alt="Screenshot of random quote generator">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">Random Quote Generator</h4>
-          <p>Random Quote Generator built with ReactJS</p>
-          <div data-aos="fade-right">
-            <a id="profile-link" href="https://jefferylgraham.github.io/random-quote-machine/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
+    
+      <section id="projects" class="text-center">
+        <h2 class="project-section">Check out some of my work:</h2>
+        <!-- APIs & Microservices Projects -->
+        <div id="project-grid">
+          <h3>Node.js Projects</h3>
+          <div class="row">
+            <!-- Exercise Tracker Project -->
+            <div class="card mx-auto project-tile col">
+                <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" class="img-fluid"  src="images/exercise.jpg"
+                  alt="Screenshot of random quote generator">
+                <div data-aos="zoom-in" class="card-body">
+                  <h4 class="card-title">Exercise <br> Tracker</h4>
+                  <div data-aos="fade-left">
+                    <a id="profile-link" href="https://jefferylgraham-exercise-tracker.glitch.me/" target="_blank">
+                      <button class="btn-outline-primary">View Project</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Request Header Parser Project -->
+              <div class="card mx-auto project-tile col">
+                <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" class="img-fluid" src="images/request-header.jpg"
+                  alt="Screenshot of random quote generator">
+                <div data-aos="zoom-in" class="card-body">
+                  <h4 class="card-title">Request Header Parser</h4>
+                  <div data-aos="fade-right">
+                    <a id="profile-link" href="https://jeff-graham-header-parser.glitch.me/" target="_blank">
+                      <button class="btn-outline-primary">View Project</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- URL Shortener Project -->
+              <div class="card mx-auto project-tile col">
+                <img data-aos="flip-up" class="card-img-top mx-auto img-fluid"  class="img-fluid" src="images/url.jpg"
+                  alt="Screenshot of random quote generator">
+                <div data-aos="zoom-in" class="card-body">
+                  <h4 class="card-title">URL <br> Shortener</h4>
+                  <div data-aos="fade-left">
+                    <a id="profile-link" href="https://jeff-graham-url-shortener.glitch.me/" target="_blank">
+                      <button class="btn-outline-primary">View Project</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Timestamp Project -->
+              <div class="card mx-auto project-tile col">
+                <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" class="img-fluid" src="images/time-stamp.jpg"
+                  alt="Screenshot of random quote generator">
+                <div data-aos="zoom-in" class="card-body">
+                  <h4 class="card-title">Timestamp <br> Service</h4>
+                  <div data-aos="fade-right">
+                    <a id="profile-link" href="https://jeff-graham-timestamp-microservice.glitch.me/" target="_blank">
+                      <button class="btn-outline-primary">View Project</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- File Metadata Project -->
+              <div class="card mx-auto project-tile col">
+                <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" class="img-fluid" src="images/files.jpg"
+                  alt="Screenshot of random quote generator">
+                <div data-aos="zoom-in" class="card-body">
+                  <h4 class="card-title">File <br> Metadata</h4>
+                  <div data-aos="fade-left">
+                    <a id="profile-link" href="https://jeff-graham-file-metadata.glitch.me/" target="_blank">
+                      <button class="btn-outline-primary">View Project</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
-      </div>
-      <!-- Drum Machine Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/drum-machine-screenshot.png" alt="Screenshot of random quote generator">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">Drum Machine</h4>
-          <p>Simple drum machine built with ReactJS</p>
-          <div data-aos="fade-left">
-            <a id="profile-link" href="https://jefferylgraham.github.io/drum-machine/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
+        
+        <!-- D3 Projects -->
+        <div id="project-grid">
+          <h3>D3.js Data Visualization Projects</h3>
+          <!-- D3 Treemap Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/d3-treemap-screenshot.png"
+              alt="Screenshot of random quote generator">
+            <div data-aos="zoom-in" class="card-body">
+              <h4 class="card-title">Treemap Diagram</h4>
+              <p>Treemap Diagram using D3</p>
+              <div data-aos="fade-left">
+                <a id="profile-link" href="https://jefferylgraham.github.io/d3-treemap/" target="_blank">
+                  <button class="btn-outline-primary">View Project</button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Markdown Previewer Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/markdown-previewer-screenshot.png"
-          alt="Screenshot of random quote generator">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">Markdown Previewer</h4>
-          <p>Parses Markdown on the fly</p>
-          <div data-aos="fade-right">
-            <a id="profile-link" href="https://jefferylgraham.github.io/markdown-previewer/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
+        <!-- ReactJS Projects -->
+        <div id="project-grid">
+          <h3>Front-End Library Projects</h3>
+          <!-- Random Quote Machine Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/random-quote-generator-screenshot.png"
+              alt="Screenshot of random quote generator">
+            <div data-aos="zoom-in" class="card-body">
+              <h4 class="card-title">Random Quote Generator</h4>
+              <p>Random Quote Generator built with ReactJS</p>
+              <div data-aos="fade-right">
+                <a id="profile-link" href="https://jefferylgraham.github.io/random-quote-machine/" target="_blank">
+                  <button class="btn-outline-primary">View Project</button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- JavaScript Calculator Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/javascript-calculator-screenshot.png"
-          alt="Screenshot of React JavsScript Calculator">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">JavaScript Calculator</h4>
-          <p>Functioning calculator built with React</p>
-          <div data-aos="fade-left">
-            <a id="profile-link" href="https://jefferylgraham.github.io/javascript-calculator/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
+          <!-- Drum Machine Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/drum-machine-screenshot.png" alt="Screenshot of random quote generator">
+            <div data-aos="zoom-in" class="card-body">
+              <h4 class="card-title">Drum Machine</h4>
+              <p>Simple drum machine built with ReactJS</p>
+              <div data-aos="fade-left">
+                <a id="profile-link" href="https://jefferylgraham.github.io/drum-machine/" target="_blank">
+                  <button class="btn-outline-primary">View Project</button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Placeholder for project -->
-    </div>
-
-    <!-- Responsive Web Design Projects -->
-    <h3>Responsive Web Design Projects</h3>
-    <div id="project-grid">
-      <!-- Tribute Page Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/bob-marley-tribute-page-screenshot.png"
-          alt="Screenshot of Bob Marley Tribute Page">
-        <div data-aos="zoom-in" class="card-body">
-          <h4 class="card-title">Tribute Page</h4>
-          <p>A tribute page for Bob Marley</p>
-          <div data-aos="fade-right">
-            <a id="profile-link" href="https://jefferylgraham.github.io/tribute-page/" target="_blank">
-              <button class="btn-outline-primary">View Project</button>
-            </a>
+          <!-- Markdown Previewer Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/markdown-previewer-screenshot.png"
+              alt="Screenshot of random quote generator">
+            <div data-aos="zoom-in" class="card-body">
+              <h4 class="card-title">Markdown Previewer</h4>
+              <p>Parses Markdown on the fly</p>
+              <div data-aos="fade-right">
+                <a id="profile-link" href="https://jefferylgraham.github.io/markdown-previewer/" target="_blank">
+                  <button class="btn-outline-primary">View Project</button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Landing Page Project -->
-      <div class="card mx-auto project-tile">
-        <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/cadillac-landing-page-screenshot.png"
-          alt="Screenshot of Cadillac Landing Page">
-        <div data-aos="zoom-in" class="card-body">
-          <h5 class="card-title">Landing Page</h5>
-          <p>A landing page for Cadillac built for a course project (Not actually affiliated with the Cadillac company</p>
-
-          <div data-aos="fade-left">
-            <a id="profile-link" href="https://jefferylgraham.github.io/landing-page/" target="_blank" class="card-link"><button
-                class="btn-outline-primary">View
-                Project</button></a>
+          <!-- JavaScript Calculator Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/javascript-calculator-screenshot.png"
+              alt="Screenshot of React JavsScript Calculator">
+            <div data-aos="zoom-in" class="card-body">
+              <h4 class="card-title">JavaScript Calculator</h4>
+              <p>Functioning calculator built with React</p>
+              <div data-aos="fade-left">
+                <a id="profile-link" href="https://jefferylgraham.github.io/javascript-calculator/" target="_blank">
+                  <button class="btn-outline-primary">View Project</button>
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- Placeholder for project -->
         </div>
-      </div>
-      <!-- Placeholder for Technical Documentation Page -->
-    </div>
+    
+        <!-- Responsive Web Design Projects -->
+        <h3>Responsive Web Design Projects</h3>
+        <div id="project-grid">
+          <!-- Tribute Page Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/bob-marley-tribute-page-screenshot.png"
+              alt="Screenshot of Bob Marley Tribute Page">
+            <div data-aos="zoom-in" class="card-body">
+              <h4 class="card-title">Tribute Page</h4>
+              <p>A tribute page for Bob Marley</p>
+              <div data-aos="fade-right">
+                <a id="profile-link" href="https://jefferylgraham.github.io/tribute-page/" target="_blank">
+                  <button class="btn-outline-primary">View Project</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Landing Page Project -->
+          <div class="card mx-auto project-tile">
+            <img data-aos="flip-up" class="card-img-top mx-auto img-fluid" src="images/cadillac-landing-page-screenshot.png"
+              alt="Screenshot of Cadillac Landing Page">
+            <div data-aos="zoom-in" class="card-body">
+              <h5 class="card-title">Landing Page</h5>
+              <p>A landing page for Cadillac built for a course project (Not actually affiliated with the Cadillac company</p>
+    
+              <div data-aos="fade-left">
+                <a id="profile-link" href="https://jefferylgraham.github.io/landing-page/" target="_blank" class="card-link"><button
+                    class="btn-outline-primary">View
+                    Project</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- Placeholder for Technical Documentation Page -->
+        </div>
+    
+    
+        <div class="btn-group">
+          <a id="profile-link" href="https://codepen.io/jefferylgraham/" target="_blank">
+            <button class="btn-outline-primary">Check Out My CodePen</button>
+          </a>
+          <a id="profile-link" href="https://github.com/jefferylgraham" target="_blank">
+            <button class="btn-outline-primary">Check Out My Github</button>
+          </a>
+          <a id="profile-link" href="https://jefferylgraham.com/" target="_blank">
+            <button class="btn-outline-primary">Check Out My Website</button>
+          </a>
+        </div>
+      </section>
+    
+      <section id="contact">
+        <h2>Let's Collaborate!</h2>
+        <div data-aos="fade-zoom-in" data-aos-duration="3000" id="contact-info">
+          <a href="https://www.linkedin.com/in/jefferylgraham/" target="_blank"><i class="fab fa-linkedin-in"></i> </a>
+    
+          <a href="https://twitter.com/JeffERyLGraham" target="_blank"><i class="fab fa-twitter"></i> </a>
+    
+          <a href="https://jefferylgraham.com/contact/" target="_blank"><i class="fas fa-envelope"></i> </a>
+        </div>
+      </section>
 
-
-    <div class="btn-group">
-      <a id="profile-link" href="https://codepen.io/jefferylgraham/" target="_blank">
-        <button class="btn-outline-primary">Check Out My CodePen</button>
-      </a>
-      <a id="profile-link" href="https://github.com/jefferylgraham" target="_blank">
-        <button class="btn-outline-primary">Check Out My Github</button>
-      </a>
-      <a id="profile-link" href="https://jefferylgraham.com/" target="_blank">
-        <button class="btn-outline-primary">Check Out My Website</button>
-      </a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Let's Collaborate!</h2>
-    <div data-aos="fade-zoom-in" data-aos-duration="3000" id="contact-info">
-      <a href="https://www.linkedin.com/in/jefferylgraham/" target="_blank"><i class="fab fa-linkedin-in"></i> </a>
-
-      <a href="https://twitter.com/JeffERyLGraham" target="_blank"><i class="fab fa-twitter"></i> </a>
-
-      <a href="https://jefferylgraham.com/contact/" target="_blank"><i class="fas fa-envelope"></i> </a>
-    </div>
-  </section>
+  </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
